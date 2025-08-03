@@ -239,6 +239,44 @@ body {
     height: auto;
 }
 
+/* Newsletter Section */
+.newsletter-section {
+    margin: 3rem 0;
+    padding: 2rem 0;
+    border-top: 3px solid rgba(207, 112, 49, 0.3);
+}
+
+.newsletter-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.newsletter-art {
+    text-align: center;
+}
+
+.newsletter-art img {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.newsletter-form {
+    background-color: #f4e4a6;
+    border: 5px solid #CF7031;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* Footer */
 .footer {
     background-color: #FFEEAA;
@@ -308,6 +346,82 @@ body {
     font-size: 1.4rem;
     color: #9D511F;
     line-height: 1.7;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    background-color: #f4e4a6;
+    border: 5px solid #CF7031;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    color: #9D511F;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 3px solid #CF7031;
+    border-radius: 8px;
+    font-family: 'Hind Guntur', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #9D511F;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #29abe2;
+    box-shadow: 0 0 0 3px rgba(41, 171, 226, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-button {
+    background-color: #CF7031;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #b85a28;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:active {
+    transform: translateY(0);
 }
 
 /* Blog Post Styles */
@@ -718,6 +832,32 @@ body {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+    
+    .contact-form {
+        padding: 1.5rem;
+        margin: 1.5rem auto 0;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.6rem;
+        font-size: 0.95rem;
+    }
+    
+    .submit-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
+    }
+    
+    /* Newsletter responsive styles */
+    .newsletter-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .newsletter-art img {
+        width: 350px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -780,6 +920,40 @@ body {
     .blog-post-content,
     .blog-post-content-preview {
         font-size: 1rem;
+    }
+    
+    .contact-form {
+        padding: 1rem;
+        margin: 1rem auto 0;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .form-group label {
+        font-size: 1rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .submit-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+    
+    /* Newsletter responsive styles for small screens */
+    .newsletter-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .newsletter-art img {
+        width: 300px;
     }
 }
 
@@ -853,4 +1027,135 @@ body {
     .blog-post-content-preview {
         font-size: 0.95rem;
     }
+    
+    .contact-form {
+        padding: 0.8rem;
+        margin: 0.8rem auto 0;
+    }
+    
+    .form-group {
+        margin-bottom: 0.8rem;
+    }
+    
+    .form-group label {
+        font-size: 0.95rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+    
+    .submit-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    /* Newsletter responsive styles */
+    .newsletter-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .newsletter-art img {
+        width: 320px;
+    }
+}
+
+/* MailerLite Form Custom Styling */
+.newsletter-form .ml-form-embedContainer {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.newsletter-form .ml-form-embedWrapper {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.newsletter-form .ml-form-embedBody {
+    padding: 0 !important;
+}
+
+.newsletter-form .ml-form-embedContent h4 {
+    font-family: 'Comfortaa', cursive !important;
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    color: #9D511F !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+}
+
+.newsletter-form .ml-form-embedContent p {
+    font-family: 'Hind Guntur', sans-serif !important;
+    font-size: 1.1rem !important;
+    color: #9D511F !important;
+    text-align: center !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.6 !important;
+}
+
+.newsletter-form .ml-form-fieldRow input {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border: 3px solid #CF7031 !important;
+    border-radius: 8px !important;
+    font-family: 'Hind Guntur', sans-serif !important;
+    font-size: 1rem !important;
+    color: #9D511F !important;
+    padding: 0.75rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.newsletter-form .ml-form-fieldRow input:focus {
+    outline: none !important;
+    border-color: #29abe2 !important;
+    box-shadow: 0 0 0 3px rgba(41, 171, 226, 0.2) !important;
+}
+
+.newsletter-form .ml-form-embedSubmit button {
+    background: linear-gradient(90deg, #80C8E0 0%, #F26D86 100%) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    color: #5D3A1A !important;
+    font-family: 'Comfortaa', cursive !important;
+    font-weight: 900 !important;
+    font-size: 1.1rem !important;
+    padding: 0.75rem 1.5rem !important;
+    width: 100% !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.newsletter-form .ml-form-embedSubmit button:hover {
+    background: linear-gradient(90deg, #6BB8D0 0%, #E25D76 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.newsletter-form .ml-form-successBody {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.newsletter-form .ml-form-successContent h4 {
+    font-family: 'Comfortaa', cursive !important;
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    color: #9D511F !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+}
+
+.newsletter-form .ml-form-successContent p {
+    font-family: 'Hind Guntur', sans-serif !important;
+    font-size: 1.1rem !important;
+    color: #9D511F !important;
+    text-align: center !important;
+    line-height: 1.6 !important;
 } 
