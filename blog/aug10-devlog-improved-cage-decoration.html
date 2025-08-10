@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved cage decoration gameplay - Mirini Games</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/branding/image-logo.svg">
+    <link rel="alternate icon" type="image/png" href="../assets/branding/letter-logo.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Hind+Guntur:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4J4Q8JQ5W8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4J4Q8JQ5W8');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/branding/letter-logo.png" alt="Mirini Games Logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="navigation">
+                <a href="../devlog.html" class="nav-button">devlog</a>
+                <a href="../games.html" class="nav-button">games</a>
+                <a href="../contact.html" class="nav-button">contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <article class="blog-post">
+            <div class="blog-post-container">
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">Improved cage decoration gameplay, more possible colours and pattern variations</h1>
+                    <p class="blog-post-date">Posted on <span class="date-bold">10 August 2025</span></p>
+                </header>
+                
+                <div class="blog-post-content">
+                    <p>The past week, there's been many improvements and work done adding animations and more customization to Guinea Garden.</p>
+                    
+                    <h3>Changed drag-and-drop system into tapping/clicking on grid system so it's better on both mobile and desktop</h3>
+                    <p>The dragging and dropping looked bad, wasn't very responsive, and it wasn't clear where you could actually place items in the cage. Now, to place items in the cage (either on the wall or floor), you simply click the item, then click where you want to place it. This will also make it easier to transition from desktop to mobile.</p>
+                    
+                    <div class="blog-post-image-center">
+                        <img src="../assets/blog/10aug25/grid-system.png" alt="Grid System for Cage Decoration" class="blog-image">
+                    </div>
+                    
+                    <h3>Made a pretty UI for placing things in the grid</h3>
+                    <p>The previous grid was just there for testing purposes and was rather ugly, now you can see every square when placing items and it feels and looks nice. The grid doesn't line up perfectly with the cage image - this will be fixed soon.</p>
+                    
+                    <h3>Second grid on wall to place hayracks and water bottles</h3>
+                    <p>Now you can put items on the wall, and guinea pigs can't walk on it (but will eventually be able to interact with items on it).</p>
+                    
+                    <h3>Added mobile friendly UI for the guinea pig customizer screen</h3>
+                    <p>It's now possible to play with and use the customizer on phones/tablet if you rotate horizontally. I'm considering releasing a demo of just the customizer so people can recreate their own piggies, and maybe watch them walk around on the cage.</p>
+                    
+                    <h3>Added RGB masks so that each current pattern has variants, and allowed player to choose multiple patterns at a time, allowing for tri-colored guinea pigs</h3>
+                    <p>This is the biggest change. All the same patterns are still in the game - dalmatian, himalayan, dutch, brindle (and none/self) - but I've added replicas of these patterns with certain areas coloured blue, green, or red, which acts as instructions to tell the game "hide this part of the pattern if it's red, make it visible if it's blue). So this means that you can now have over <strong>288,000</strong> combinations of guinea pig breeds/patterns/colours.</p>
+                    
+                    <div class="blog-post-image-center">
+                        <img src="../assets/blog/10aug25/rgb-mask.png" alt="RGB Mask System for Pattern Variations" class="blog-image">
+                    </div>
+                    
+                    <h3>Fixed performance issues / multiple screens loading at once, fixed 'blinking'/rendering issues with guinea pig animations so pigs walk smoothly now</h3>
+                    <p>Changed font and made text larger across whole game, so hopefully it's more readable (previously "H" looked like "W" and it was hard to read numbers), but still cute.</p>
+                    
+                    <div class="blog-post-image-center">
+                        <img src="../assets/blog/10aug25/new-font.png" alt="New Font and Improved Text Readability" class="blog-image">
+                    </div>
+                    
+                    <h3>Created walking animation sprite sheets for every guinea pig breed</h3>
+                    
+                    <p>My goals for this upcoming week are to finish making sprite sheets for the pattern animations, and their accompanying RGB masks so I can continue to finish the tutorial. Once the tutorial is finished (it's currently 2/3 done), I can create the actual gameplay of taking care of guinea pigs and creating meters for happiness and more. As I'm going through the tutorial, I'm adding features of the game; the next step I have to implement is putting houses in the cage. After that, you can put your piggies in the cage, and they immediately start to run into the houses. This is the point where I can actually implement real guinea pig behaviour (this first one being their skittishness). Hopefully by next week, it will be time to put all the food sprites/art I've been making into the game.</p>
+                    
+                    <p class="blog-post-closing">Thank you for reading <3</p>
+                    
+                    <div class="blog-post-back-button">
+                        <a href="../devlog.html" class="back-to-blog-button">← Back to blog</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                Follow us on Instagram, TikTok, and donate on Ko-Fi
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/mirinigames/" class="social-icon instagram" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/ui/insta-logo.jpg" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@mirinigames" class="social-icon tiktok" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/ui/tiktok-logo.png" alt="TikTok">
+                </a>
+                <a href="https://ko-fi.com/mirini" class="social-icon kofi" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/ui/kofi-logo.png" alt="Ko-Fi">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
