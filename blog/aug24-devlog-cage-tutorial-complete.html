@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 August Devlog - Mirini Games</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/branding/image-logo.svg">
+    <link rel="alternate icon" type="image/png" href="../assets/branding/letter-logo.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Hind+Guntur:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4J4Q8JQ5W8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4J4Q8JQ5W8');
+    </script>
+    
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '1709726');
+    </script>
+    <!-- End MailerLite Universal -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/branding/letter-logo.png" alt="Mirini Games Logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="navigation">
+                <a href="../devlog.html" class="nav-button">devlog</a>
+                <a href="../games.html" class="nav-button">games</a>
+                <a href="../contact.html" class="nav-button">contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <article class="blog-post">
+            <div class="blog-post-container">
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">24 August Devlog</h1>
+                    <p class="blog-post-date">Posted on <span class="date-bold">24 August 2025</span></p>
+                </header>
+                
+                <div class="blog-post-content">
+                    <p>The cage part of the tutorial is finally done! This means the player can now buy items and customize adopted guinea pigs in the first part of the tutorial, and place items, fill certain items with pellets, water, and hay, and this week was spent adding the final step to this second part of the tutorial - actually putting the guinea pigs in the cage.</p>
+                    
+                    <p>It was possible to do this before, but now they're starting to appear in the 'real' game. Before, guinea pigs could be placed into the cage by clicking and dragging them in the Pigs panel, but that was just to test how the guinea pigs look. Now, simply clicking on the pigs in the panel puts them in the cage at a random spot, and since this is the first time in a new place, they quickly run over to a hiding spot.</p>
+                    
+                    <div class="blog-post-image-center">
+                        <video autoplay loop muted class="blog-image">
+                            <source src="../assets/blog/24aug25/hiding-pigs.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    <p>The next step will be starting the third and final part of the tutorial, which will guide the player how to buy food, how the in-game logic of food storage and servings work, and how to feed the guinea pigs.</p>
+                    
+                    <p>I also made some practical fixes, like making it so that only one panel can be open at a time (so the Pigs and Storage panel can't be open at the same time, and clicking on one automatically closes the other).</p>
+                    
+                    <p>There is now also a working inventory system, whereas before the items were really just buttons that let me place items into the cage, including multiple of the same item even though you only buy one of each in the tutorial. Now each item is properly stored and states the number of how many you have.</p>
+                    
+                    <p>As you can tell in the video, the piggies are now running instead of walking. This is the beginning of implementing actual guinea pig behavior, and I've made it so it will be easier to add things similar to hiding behaviors such as popcorning and pooping.</p>
+                    
+                    <p>I've never made a game at this scale before, and I'm starting to realize the bigger it gets, the more difficult it gets to program it and add even more features, especially those that add onto or overlap with already existing ones. Even though the game is technically far from finished, I don't think the things that will be added (like happiness meters, health upkeep, day cycles) will take much more time than everything else.</p>
+                    
+                    <p>I may have mentioned it before, but I am still considering releasing a demo of just the customizer and a simplified cage setup to watch them walk around. I thought I may have released it by now, as I'm able to do that, but I think I'd rather do it when more of the game is done in order to see just how much bigger the game is than just the customizer. I'd like to think quite a lot, but I don't want to 'spoil it', as it were. If / When the customizer demo is released, I'll start posting to social media more, while still keeping focus on the game.</p>
+                    
+                    <p class="blog-post-closing">Thank you for reading ♥</p>
+                    
+                    <div class="blog-post-back-button">
+                        <a href="../devlog.html" class="back-to-blog-button">← Back to blog</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                Follow us on Instagram, TikTok, and donate on Ko-Fi
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/mirinigames/" class="social-icon instagram" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/ui/insta-logo.jpg" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@mirinigames" class="social-icon tiktok" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/ui/tiktok-logo.png" alt="TikTok">
+                </a>
+                <a href="https://ko-fi.com/mirini" class="social-icon kofi" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/ui/kofi-logo.png" alt="Ko-Fi">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
